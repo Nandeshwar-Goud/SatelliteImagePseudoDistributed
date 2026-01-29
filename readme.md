@@ -10,19 +10,19 @@ Rather than focusing on complex algorithms, this project emphasizes architecture
 
 ### ✨ Key Features
 
-✅ Tile-based image partitioning.
+- ✅ Tile-based image partitioning.
 
-✅ Multithreaded parallel processing.
+- ✅ Multithreaded parallel processing.
 
-✅ MapReduce-style workflow (Map → Process → Merge).
+- ✅ MapReduce-style workflow (Map → Process → Merge).
 
-✅ Modular and extensible architecture.
+- ✅ Modular and extensible architecture.
 
-✅ OpenCV-based image processing.
+- ✅ OpenCV-based image processing.
 
-✅ Artificial delay simulation for real-world latency modeling.
+- ✅ Artificial delay simulation for real-world latency modeling.
 
-✅ Scalable design suitable for cloud and distributed systems.
+- ✅ Scalable design suitable for cloud and distributed systems.
 
 ### 🧠 Architecture Design
 
