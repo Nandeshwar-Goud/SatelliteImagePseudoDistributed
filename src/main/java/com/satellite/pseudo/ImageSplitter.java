@@ -15,8 +15,7 @@ public class ImageSplitter {
             for (int x = 0; x < image.cols(); x += tileSize) {
                 int w = Math.min(tileSize, image.cols() - x);
                 int h = Math.min(tileSize, image.rows() - y);
-                Mat tile = new Mat(image, new Rect(x, y, w, h)).clone();
-                tiles.add(tile);
+                tiles.add(new Mat(image, new Rect(x, y, w, h)));
             }
         }
         return tiles;

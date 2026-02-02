@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Satellite Processing Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>🛰️ Satellite Image Processing</h1>
+    <span id="status">Status: Idle</span>
+  </header>
+
+  <div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h3>Dataset</h3>
+
+      <label>Upload Dataset Folder</label>
+      <input type="file" id="folderUpload" webkitdirectory multiple accept="image/*" />
+
+      <label>OR Upload Dataset ZIP</label>
+      <input type="file" id="zipUpload" accept=".zip" />
+
+      <label>Tile Size</label>
+      <input type="number" id="tileSize" value="200">
+
+      <label>Processing Type</label>
+      <select id="mode">
+        <option value="edge">Edge / Structure Analysis</option>
+      </select>
+
+      <button type="button" id="startBtn">Start Processing</button>
+
+    </aside>
+
+    <!-- Main content -->
+    <main class="main">
+
+      <section class="metrics">
+        <div class="card">
+          <h4>Total Images</h4>
+          <p id="totalImages">0</p>
+        </div>
+        <div class="card">
+          <h4>Processed</h4>
+          <p id="processedImages">0</p>
+        </div>
+        <div class="card">
+          <h4>Threads</h4>
+          <p id="threads">-</p>
+        </div>
+      </section>
+
+      <section class="progress-section">
+        <h3>Progress</h3>
+        <progress id="progressBar" value="0" max="100"></progress>
+      </section>
+
+      <section class="logs">
+        <h3>Logs</h3>
+        <div id="logBox"></div>
+      </section>
+      <section class="gallery">
+        <h3>Processed Results</h3>
+        <div id="galleryGrid" class="gallery-grid"></div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
